@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Virtual Farm</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <script src='js/dependencies/jquery-2.1.3.min.js'></script>
+
+        <script src='js/data.js'></script>
+        <script src='js/game.js'></script>
+        <script src='js/gameObjects.js'></script>
+        <script src='js/main.js'></script>
+    </head>
+    <body>
+        <div id='titlePage'>
+            <!-- replace with logo -->
+            <div id='logo'><img src='img/virtualfarm_logo.png'></div>
+            <button class='button' id='start'> start </button>
+            <button class='button' id='help'> help </button>
+        </div>
+        <div id='backstory'>
+        </div>
+        <div id='game'>
+            <div id='userinfo'>
+                <span id='day'>Day: 1</span>
+                <span id='money'>Money: 200</span>
+            </div>
+            <!-- The following needs to be replaced with png -->
+            <div id='house'><img src='img/house.png'></div>
+            <div id='player'></div>
+            <div id='field'></div>
+            <div id='toolBar'>
+                <div class='toolbox' id='toolbox1'>
+                    <span class='description'>Harvest/Remove</span>
+                    <img src='img/glove.png'>
+                </div>
+                <div class='toolbox' id='toolbox2'>
+                    <span class='description'>Watering Can</span>
+                    <img src='img/wateringcan.png'>
+                </div>
+                <div class='toolbox' id='toolbox3'>
+                    <span class='description'>Tomato seeds</span>
+                    <img src='img/tomato_seed.png'>
+                    <span class='quantity' id='quantity3'>0</span>
+                </div>
+                <div class='toolbox' id='toolbox4'>
+                    <span class='quantity' id='quantity4'>0</span>
+                </div>
+                <div id='shopIcon'>SHOP</div>
+            </div>
+            <div id='shop'>
+                <div id='shopkeeper'>
+                    <img src='img/shopkeeper.png'>
+                </div>
+                <div class='dialogue' id='dialogue'></div>
+                <div id='shopMenu'>
+                    <div id='shopkeeperProtrait'>
+                        <img src='img/shopkeeper_protrait.png'>
+                    </div>
+                    <div id='products'></div>
+                </div>
+            </div>
+        </div>
+        <div id='finish'>
+            <h1> Stats </h1>
+            You have survived <span id='stats_days'></span> days<br>
+            Total money earned $<span id='stats_totalMoneyEarned'></span><br>
+            Total natural disasters faced<br>
+            <ul id='stats_naturalDisasters'>
+                <li>0 Fire<br></li>
+                <li>0 Storm<br></li>
+                <li>0 Crow<br></li>
+            </ul>
+
+        </div>
+    </body>
+</html>
